@@ -951,7 +951,7 @@ GameObject:
   - component: {fileID: 4964781887320971283}
   - component: {fileID: 6224681951112284634}
   m_Layer: 5
-  m_Name: CharacterImage
+  m_Name: PlayerImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1213,7 +1213,7 @@ GameObject:
   - component: {fileID: 7783007404542391839}
   - component: {fileID: 5618293739961731236}
   m_Layer: 5
-  m_Name: ValueText
+  m_Name: LevelValueText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
