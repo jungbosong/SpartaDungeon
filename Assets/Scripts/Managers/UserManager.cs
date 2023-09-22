@@ -1,6 +1,9 @@
+using ItemInformation;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SceneManagement;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 
 public class UserManager
 {
@@ -31,6 +34,9 @@ public class UserManager
     public int criticalDamage { get; set; }
     public int coin { get; set; }
 
+    public List<ItemInfo> inventory = new List<ItemInfo>();
+    public int choosedItemNum;
+
     public void Init()
     {
         name = "User";
@@ -45,6 +51,8 @@ public class UserManager
         increasedDef = 0;
         criticalDamage = 35;
         coin = 1600;
+
+        inventory = Managers.JsonReader.ReadItemDataJson("Assets/Data/itemData.json").ItemInfoList;
     }
 
     public void UpdateInfo()
@@ -53,89 +61,7 @@ public class UserManager
         def = 5;
         increasedAtk = 0;
         increasedDef = 0;
-        //SetIncreasedAtk();
-        //SetIncreasedDef();
     }
-
-    /*public void SetIncreasedAtk()
-    {
-        foreach (Item item in inventory.items)
-        {
-            if (item.equipped)
-            {
-                if (item.type == (int)ItemType.AttackItem)
-                {
-                    increasedAtk += item.effect;
-                    atk += increasedAtk;
-                    equippedAtkItems.Add(item.name);
-                }
-            }
-            else if (equippedAtkItems.Contains(item.name))
-            {
-                equippedAtkItems.Remove(item.name);
-                increasedAtk -= item.effect;
-                atk -= increasedAtk;
-            }
-        }
-    }
-
-    public void SetIncreasedDef()
-    {
-        foreach (Item item in inventory.items)
-        {
-            if (item.equipped)
-            {
-                if (item.type == (int)ItemType.DefensiveItem)
-                {
-                    increasedDef += item.effect;
-                    def += increasedDef;
-                    equippedDefItems.Add(item.name);
-                }
-            }
-            else if (equippedAtkItems.Contains(item.name))
-            {
-                equippedDefItems.Remove(item.name);
-                increasedDef -= item.effect;
-                def -= increasedDef;
-            }
-        }
-    }
-
-    public void EquipItem(int idx)
-    {
-        if (inventory.items[idx].type == (int)ItemType.AttackItem)
-        {
-            if (atkItem == null)
-            {
-                atkItem = inventory.items[idx];
-            }
-            if (atkItem.name != inventory.items[idx].name)
-            {
-                if (atkItem.equipped)
-                {
-                    atkItem.Equip();
-                }
-                atkItem = inventory.items[idx];
-            }
-            atkItem.Equip();
-        }
-        else
-        {
-            if (defItem == null)
-            {
-                defItem = inventory.items[idx];
-            }
-            if (defItem.name != inventory.items[idx].name)
-            {
-                if (defItem.equipped)
-                {
-                    defItem.Equip();
-                }
-                defItem = inventory.items[idx];
-            }
-            defItem.Equip();
-        }
-    }*/
 
     public string JobToString()
     {

@@ -1,0 +1,74 @@
+{
+	"ItemInfoList": [
+	  {
+		"ImgPath": "Sprites/Steampunk_UI_gameplay_icons_1",
+		"ImgNum": 1,
+        "Name": "",
+        "Eft":  "3f",
+        "IsEquiped": true
+	  },
+	  {
+		"ImgPath": "Sprites/Steampunk_UI_gameplay_icons_1",
+		"ImgNum": 30,
+        "Name": "",
+        "Eft":  "3f",
+        "IsEquiped": true
+	  },
+	  {
+		"ImgPath": "Sprites/Steampunk_UI_gameplay_icons_3",
+		"ImgNum": 1,
+        "Name": "",
+        "Eft":  "3f",
+        "IsEquiped": false
+	  },
+	  {
+		"ImgPath": "Sprites/Steampunk_UI_gameplay_icons_3",
+		"ImgNum": 5,
+        "Name": "",
+        "Eft":  "3f",
+        "IsEquiped": false
+	  },
+	   {
+		"ImgPath": "Sprites/Steampunk_UI_gameplay_icons_3",
+		"ImgNum": 9,
+        "Name": "",
+        "Eft":  "3f",
+        "IsEquiped": false
+	  },
+	  {
+		"ImgPath": "Sprites/Steampunk_UI_settings_icons_2",
+		"ImgNum": 1,
+        "Name": "",
+        "Eft":  "3f",
+        "IsEquiped": false
+	  },
+	  {
+		"ImgPath": "Sprites/Steampunk_UI_settings_icons_2",
+		"ImgNum": 9,
+        "Name": "",
+        "Eft":  "3f",
+        "IsEquiped": false
+	  },
+	  {
+		"ImgPath": "Sprites/Steampunk_UI_settings_icons_2",
+		"ImgNum": 13,
+        "Name": "",
+        "Eft":  "3f",
+        "IsEquiped": false
+	  },
+	  {
+		"ImgPath": "Sprites/Steampunk_UI_settings_icons_2",
+		"ImgNum": 17,
+        "Name": "",
+        "Eft":  "3f",
+        "IsEquiped": false
+	  },
+	  {
+		"ImgPath": "Sprites/Steampunk_UI_settings_icons",
+		"ImgNum": 5,
+        "Name": "",
+        "Eft":  "3f",
+        "IsEquiped": false
+	  }
+	]
+  }

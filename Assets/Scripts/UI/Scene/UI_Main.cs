@@ -68,5 +68,6 @@ public class UI_Main : UI_Scene
     void OnClickedInventoryButton()
     {
         Debug.Log("Inventory");
+        Managers.UI.ShowPopupUI<UI_InventoryPopup>();
     }
 }

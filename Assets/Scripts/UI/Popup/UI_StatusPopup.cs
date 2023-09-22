@@ -27,7 +27,7 @@ public class UI_StatusPopup : UI_Popup
         BindButton(typeof(Buttons));
         #endregion
 
-        GetButton((int)Buttons.CloseButton).gameObject.BindEvent(() => Managers.UI.ClosePopupUI(this));
+        GetButton((int)Buttons.CloseButton).gameObject.BindEvent(OnClickedCloseButton);
 
         for (int i = 0; i < INFO_COUNT; i++)
         {
@@ -38,5 +38,11 @@ public class UI_StatusPopup : UI_Popup
         }
 
         return true;
+    }
+
+    void OnClickedCloseButton()
+    {
+        Debug.Log("Cicked CloseButton");
+        Managers.UI.ClosePopupUI(this);
     }
 }
